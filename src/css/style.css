@@ -10,14 +10,14 @@ header {
     padding-bottom: 1.2rem;
     padding-top: 1.2rem; }
     header ul li a {
-      color: #ffcaaf;
+      color:  #caa3ec;
       text-decoration: none;
       font-size: 1.1rem;
       font-family: cursive;
       padding: 2.5rem; }
 
 ul li a:hover {
-  color: #caa3ec; }
+  color:   #ffcaaf; }
 
  /* header {
     background-color: black;
@@ -56,3 +56,8 @@ ul li a:hover {
     color: #caa3ec; } }
 
   */
+
+  .carrito,.logo {
+padding-top:20px;
+  }
+
