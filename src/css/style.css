@@ -24,8 +24,9 @@ ul li a:hover {
   }
   
   .cardContainer {
-    background-color: #e4d0fd;
     background-color: #81768b;
+    background-color: #d8d2df;
+    background-color: #dad7de;
     padding:3%;
     display: flex;
     justify-content:center;
