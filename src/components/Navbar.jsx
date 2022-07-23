@@ -2,7 +2,7 @@ const Navbar = () => {
 return (
     <>
 <header>
-<div class ="logo">
+<div className ="logo">
   <img
             src="./src/images/LogoLili_14-removebg-preview.png"
             alt="Logo de la marca"
@@ -15,7 +15,7 @@ return (
     <li><a href="#">Contacto</a></li>
     <li><a href="#">Carrito</a></li>
   </ul>
-  <div class ="carrito">
+  <div className ="carrito">
   <img
             src="./src/images/carrito-lila-removebg-preview.png"
             alt="Logo de la marca"

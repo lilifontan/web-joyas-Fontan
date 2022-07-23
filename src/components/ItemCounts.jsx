@@ -1,14 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function ItemCounts() {
+
+  const [numero, setNumero] = useState(0)
   return (
     <>
-    <div>
-        <button className ="buttonCart">-</button>
+    <div style={{marginLeft: "10px"}} >
+        <button style={{marginLeft: "10px"}} onClick={() => setNumero (numero-1)}>-</button>
         {
-            console.log("Hola desde ItemCounts")
+          <span style={{marginLeft: "10px"}}>{numero}</span>
         }
-        <button className="buttonCart">+</button>
+        <button style={{marginLeft: "10px"}} onClick={() => setNumero (numero+1)}>+</button>
 
     </div>
 

@@ -2,6 +2,7 @@
 header {
   background-color: black;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-evenly; }
   header ul {
     display: flex;
@@ -21,6 +22,7 @@ ul li a:hover {
 
   .carrito,.logo {
     padding-top:25px;
+    padding-bottom: 20px;;
   }
   
   .cardContainer {
@@ -36,6 +38,7 @@ ul li a:hover {
     .card {
       display: flex;
       flex-direction: column;
+      justify-content: center; 
       background-color: rgb(232, 241, 241);
       padding: 3%;
       margin: 50px; 
@@ -46,13 +49,14 @@ ul li a:hover {
     .buttonProd {
       display: flex;
       justify-content: center;
-      width: 100%;
+      flex-direction: row;
+      margin-left:15%;
+      width: 70%;
       background-color: #e0dbdb;
       color: #302d2d;
       margin-bottom: 1%;
       padding-top:3%;
       padding-bottom: 3%;
-
       margin-top:8%;
       border: none;
       border-radius: 10px;
@@ -61,14 +65,19 @@ ul li a:hover {
      
      }
 
-     .buttonCart{
-      margin-left:20px;
+    
+*/
+    .buttonCart2{
+      display: flex;
+      margin-left:30%;
+
      }
 
      .cartPrice {
-      display: flex;
+      margin-left:35%;
       flex-direction: row;
-      justify-content: space-around; }
+      justify-content: center;
+   }
 
      .cartTitle{
       display: flex;

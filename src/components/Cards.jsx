@@ -1,6 +1,8 @@
 import React from 'react'
 import ItemCounts from "./ItemCounts"
+
 const Cards = (props) => {
+
   return (
     <>
 
@@ -8,7 +10,8 @@ const Cards = (props) => {
         <div className="cartImg scale"> <img src={props.cartImg} /> </div>
         <div className="cartTitle"><h2>{props.cartTitle}</h2></div>
         <div className="cartPrice"><h2>${props.cartPrice}</h2></div>
-        <button data-id="${id}" class="buttonProd"> Agregar al Carrito   
+        <button data-id="${id}" className="buttonProd"> 
+        <span>Agregar  </span>
         <ItemCounts/>
         </button>
         </div>     
