@@ -50,8 +50,8 @@ ul li a:hover {
       display: flex;
       justify-content: center;
       flex-direction: row;
-      margin-left:15%;
-      width: 70%;
+      width: 90%;
+      margin-left:5%;
       background-color: #e0dbdb;
       color: #302d2d;
       margin-bottom: 1%;
