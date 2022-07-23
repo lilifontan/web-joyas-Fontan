@@ -20,7 +20,7 @@ ul li a:hover {
   color:   #ffcaaf; }
 
   .carrito,.logo {
-    padding-top:20px;
+    padding-top:25px;
   }
   
   .cardContainer {
@@ -46,20 +46,23 @@ ul li a:hover {
     .buttonProd {
       display: flex;
       justify-content: center;
+      width: 100%;
       background-color: #e0dbdb;
       color: #302d2d;
       margin-bottom: 1%;
-      font-size: 22px;
       padding-top:3%;
       padding-bottom: 3%;
-      margin-right: 15%;
-      margin-left: 15%;
+
       margin-top:8%;
       border: none;
       border-radius: 10px;
       cursor: pointer;
       font-size: 18px;
      
+     }
+
+     .buttonCart{
+      margin-left:20px;
      }
 
      .cartPrice {
