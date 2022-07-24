@@ -12,7 +12,7 @@ const Cards = (props) => {
         <div className="cartPrice"><h2>${props.cartPrice}</h2></div>
         <button data-id="${id}" className="buttonProd"> 
         <span>Agregar al carrito </span>
-        <ItemCounts/>
+        <ItemCounts stock={props.stock} initial = {1}/>
         </button>
         </div>     
      
