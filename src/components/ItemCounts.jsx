@@ -1,24 +1,20 @@
 import React, {useState} from 'react'
 
 function ItemCounts(stock, initial) {
+  let [numero, setNumero] = useState(0)
 
-  /*const [numero, setNumero] = useState(initial)*/
- /* setNumero (initial)*/
- const [numero, setNumero] = useState(0)
+  function onAdd () {
+    console.log ("initial es en onAdd", initial)
 
- function onAdd () {
-  
-        console.log (numero,stock,initial)
-    if (numero <= stock)
+    if (numero < initial)
      setNumero (numero+1)
     else 
      Swal.fire('Producto sin stock')
-  
- }
+                }
  function onRest ()
- {
+                {
     setNumero (numero-1)
- }
+                }
 
   return (
     <>
