@@ -13,11 +13,14 @@ function ItemCounts({st}, {init}) {
     else 
      Swal.fire('Producto sin stock')
                 }
+
  function onRest ()
                 {
     setNumero (numero-1)
-    st =st+1
-                }
+        if (numero > init){
+        st =st+1
+    }
+  }
 
   return (
     <>
