@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
 
-function ItemCounts({st}, {init}) {
+function ItemCounts({st,init}) {
 
-  console.log (st)
   let [numero, setNumero] = useState(0)
 
   function onAdd () {
@@ -16,9 +15,9 @@ function ItemCounts({st}, {init}) {
 
  function onRest ()
                 {
+    if (numero > init){
     setNumero (numero-1)
-        if (numero > init){
-        st =st+1
+    st =st+1
     }
   }
 
