@@ -29,7 +29,7 @@ import Cards from "./Cards"
                     title: "Cyon",
                     price: 16500,
                     stock:8,
-                    initial:0
+                    initial:5
                 }
 
         ])

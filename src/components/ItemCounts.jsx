@@ -1,15 +1,14 @@
 import React, {useState} from 'react'
 
-function ItemCounts() {
+function ItemCounts({st}, {init}) {
 
-  let stock = 5
-  let initial = 1
+  console.log (st)
   let [numero, setNumero] = useState(0)
 
   function onAdd () {
-    if (numero < stock){
+    if (numero < st){
      setNumero (numero+1)
-     stock =stock-1
+     st =st-1
     }
     else 
      Swal.fire('Producto sin stock')
@@ -17,7 +16,7 @@ function ItemCounts() {
  function onRest ()
                 {
     setNumero (numero-1)
-    stock =stock+1
+    st =st+1
                 }
 
   return (
