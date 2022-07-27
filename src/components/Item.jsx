@@ -1,5 +1,6 @@
 
 import React from 'react'
+import ItemCounts from "./ItemCounts"
 
 const Item = ({id, img, title, price, stock , initial}) => {
 
@@ -12,7 +13,7 @@ const Item = ({id, img, title, price, stock , initial}) => {
             <div className="cartPrice"><h2>${price}</h2></div>
               <button data-id={id} className="buttonProd"> 
                     <span>Agregar al carrito </span>
-                    
+                    <ItemCounts stock ={stock }  initial={initial} />
               </button>
         </div>     
      
