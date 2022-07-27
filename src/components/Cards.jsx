@@ -1,25 +1,26 @@
 import React from 'react'
-import ItemCounts from "./ItemCounts"
+import Item from "./Item"
 
 
-const Cards = (props) => {
+const Cards = ({lista}) => {
 
 
   return (
     <>
 
-        <div className = "card">
-        <div className="cartImg scale"> <img src={props.cartImg} /> </div>
-        <div className="cartTitle"><h2>{props.cartTitle}</h2></div>
-        <div className="cartPrice"><h2>${props.cartPrice}</h2></div>
-        <button data-id="${id}" className="buttonProd"> 
-        <span>Agregar al carrito </span>
-        <ItemCounts stock={props.stock} initial = {1} />
-        </button>
-        </div>     
+        {
+                lista.map((item,i)=>
+                  <Item id={item.id} img={item.img} title={item.title} price={item.price} stock ={item.stock }  initial={item.initial}/>
+                )
+            }
      
     </>
   )
 }
 
 export default Cards;
+
+
+
+
+
