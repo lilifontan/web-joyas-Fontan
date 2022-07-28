@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar"
-import CardsContainer from "./components/CardsContainer"
+import ItemListContainer from "./components/ItemListContainer"
 
 const App = () => {
   return (
     <>
         <Navbar />
-        <CardsContainer />
+        <ItemListContainer />
     </>
   )
   }
