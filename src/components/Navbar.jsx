@@ -4,7 +4,7 @@ const Navbar = () => {
 return (
     <>
 <header>
-<div  className ="logo"  Link to = {'/'}>
+<div  className ="logo" >
   <img      
             src="./src/images/LogoLili_14-removebg-preview.png"
             alt="Logo de la marca"

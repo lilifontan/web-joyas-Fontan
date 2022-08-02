@@ -12,7 +12,6 @@ const Item = ({id, img, title, price, stock , initial}) => {
             <div className="cartTitle"><h2>{title}</h2></div>
             <div className="cartPrice"><h2>${price}</h2></div>
             <button className="buttonProd" >  <span>Ir al detalle del producto</span> 
-            <Link to = {'/categoria/anillos'} >Anillos</Link>
               </button>
               <button data-id={id} className="buttonProd"> 
                     <span>Agregar al carrito </span>
