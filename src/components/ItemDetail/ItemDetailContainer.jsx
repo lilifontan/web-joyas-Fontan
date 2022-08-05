@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import ItemDetail from "./ItemDetail"
+import ItemDetail from './ItemDetail'
 
-export default function ItemDetailContainer({tit}) {
-  console.log ("lleg a itemdetailcontainer" , tit)
+export default function ItemListContainer({tit}) {
 
-const [listaProd, setlistaProd] = useState({})
-const {idCategoria} = useParams()
+    console.log ("Producto en ItemListContainer", tit)
 
+const [listaProd, setlistaProd] = useState([])
+const {title} = useParams()
 
 //Array de productos hardcodeados
 useEffect(() => {
@@ -130,12 +130,11 @@ let lista = [
 const promesaProductos = new Promise ((res,rej) => {
 
     setTimeout(() => {
-        if(title=== "000"){
+        if(!title){
             res(lista)
         } else 
         {
         res(lista.filter((producto) => producto.title === tit))
-
         }
     },500);
 });
@@ -144,13 +143,14 @@ const promesaProductos = new Promise ((res,rej) => {
 promesaProductos.then ((respuesta)=>{
     setlistaProd(respuesta)
 })
-},[listaProd, setlistaProd, idCategoria]);
+},[listaProd, setlistaProd, title]);
 
-console.log("devuelve lista prod" , listaProd)
+console.log ("En ItemListContainer listaprod es", listaProd)
+console.log ("En ItemListContainer listaprod es", )
 
   return (
     <div id="ID_cardContainer" className="cardContainer" flex >
-    <ItemDetail lista = {listaProd}/>
+    <ItemDetail listaProd/>
     </div> 
   )
 }
