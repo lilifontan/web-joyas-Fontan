@@ -13,8 +13,7 @@ const App = () => {
 <Routes>
     <Route path="/" element={<ItemListContainer />} />
     <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
-    <Route path="/producto/:idProducto" element={<ItemDetailContainer />} />
-    <Route path="/testeventos" element={<ItemDetailContainer tit={"Kraken"}/>} />
+    <Route path="/producto/:title" element={<ItemDetailContainer />} />
     <Route path="*" element={<p>404</p>} />
  </Routes>
 
