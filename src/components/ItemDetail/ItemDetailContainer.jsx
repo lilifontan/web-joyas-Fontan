@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail'
 
-export default function ItemListContainer({tit}) {
 
-    console.log ("Producto en ItemListContainer", tit)
 
-const [listaProd, setlistaProd] = useState([])
+export default function ItemDetailContainer() {
+
+const [selected, setSelected] = useState({})
 const {title} = useParams()
 
 //Array de productos hardcodeados
@@ -134,23 +134,21 @@ const promesaProductos = new Promise ((res,rej) => {
             res(lista)
         } else 
         {
-        res(lista.filter((producto) => producto.title === tit))
+        res(lista.filter((producto) => producto.title === title))
         }
-    },500);
+    },0);
 });
 
 // El then: lo que ejecuto cuando la promesa se resuelve positivamente. Ponemos el valor de la respuesta en un estado, lo que causa un render.
 promesaProductos.then ((respuesta)=>{
-    setlistaProd(respuesta)
+    setSelected(respuesta)
 })
-},[listaProd, setlistaProd, title]);
+},[selected, setSelected, title]);
 
-console.log ("En ItemListContainer listaprod es", listaProd)
-console.log ("En ItemListContainer listaprod es", )
-
+console.log ("Selected en ItemDetailContainer ", selected)
   return (
     <div id="ID_cardContainer" className="cardContainer" flex >
-    <ItemDetail listaProd/>
+    <ItemDetail selected = {selected}/>
     </div> 
   )
 }
