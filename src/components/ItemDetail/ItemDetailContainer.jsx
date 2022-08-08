@@ -14,13 +14,12 @@ useEffect(() => {
 let lista = [
     {
         id:1,
-        img: "../src/images/Ring_resized.jpg",
+        img: "../src/images/Rings-Ethereal-700.jpg",
         title: "Ethereal",
         price: 12500,
         stock:5,
         initial:0,
         idCategoria: "anillos"
-
     },
     {
         id:2,
@@ -33,7 +32,7 @@ let lista = [
     },
     {
         id:3,
-        img: "../src/images/Necklace_resized.jpeg",
+        img: "../src/images/Necklace-Cyon-700.jpg",
         title: "Cyon",
         price: 16500,
         stock:8,
@@ -43,7 +42,7 @@ let lista = [
     },
     {
         id:4,
-        img: "../src/images/brazalete_resized.jpg",
+        img: "../src/images/Bracelet-Balter-700.jpg",
         title: "Balter",
         price: 24500,
         stock:3,
@@ -52,7 +51,7 @@ let lista = [
     },
     {
         id:5,
-        img: "../src/images/Aegonate.jpg",
+        img: "../src/images/Earrings-Aegon-700.jpg",
         title: "Aegon",
         price: 17900,
         stock:4,
@@ -61,7 +60,7 @@ let lista = [
     },
     {
         id:6,
-        img: "../src/images/Enatrane_resized.jpeg",
+        img: "../src/images/Earrings-Enif-700.jpg",
         title: "Enif",
         price: 15900,
         stock:5,
@@ -70,7 +69,7 @@ let lista = [
     },
     {
         id:7,
-        img: "../src/images/Gehryman_resized.jpeg",
+        img: "../src/images/Necklace-Helgue-700.jpeg",
         title: "Gehry",
         price: 46500,
         stock:5,
@@ -79,7 +78,7 @@ let lista = [
     },
     {
         id:8,
-        img: "../src/images/Krakense_resized.jpg",
+        img: "../src/images/Ring-Kraken-700.jpg",
         title: "Kraken",
         price: 14500,
         stock:3,
@@ -88,7 +87,7 @@ let lista = [
     },
     {
         id:9,
-        img: "../src/images/Nyctorea_resized.jpg",
+        img: "../src/images/Bracelet-Nycto-700.jpg",
         title: "Nycto",
         price: 34900,
         stock:5,
@@ -97,7 +96,7 @@ let lista = [
     },
     {
         id:10,
-        img: "../src/images/Odelelet_resized.jpeg",
+        img: "../src/images/Bracelet-Odile-700.jpg",
         title: "Odile",
         price: 28900,
         stock:7,
@@ -106,7 +105,7 @@ let lista = [
     },
     {
         id:11,
-        img: "../src/images/Strassed_resized.jpg",
+        img: "../src/images/Bracelet-Strass-700.jpg",
         title: "Strass",
         price: 14900,
         stock:3,
@@ -115,7 +114,7 @@ let lista = [
     },
     {
         id:12,
-        img: "../src/images/Absconda_resized.jpeg",
+        img: "../src/images/Earrings-Abscond-700.jpg",
         title: "Abscond",
         price: 18000,
         stock:5,
