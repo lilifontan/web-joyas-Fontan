@@ -22,7 +22,7 @@ const ItemDetail = ({sel}) => {
                      </button>
                     :
                      <button data-id={sel.id} className="buttonDetail"> 
-                     <span>Agregar producto </span>
+                     
                      <ItemCounter st={sel.stock} init={sel.initial} goToCart ={goToCart} setGoToCart={setGoToCart}/>
               </button>
                        
@@ -36,4 +36,3 @@ const ItemDetail = ({sel}) => {
 }
 
 export default ItemDetail;
-
