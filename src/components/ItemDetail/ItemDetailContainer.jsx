@@ -24,7 +24,7 @@ let lista = [
     },
     {
         id:2,
-        img: "../src/images/Earrings_resized.jpeg",
+        img: "../src/images/Aval-Earrings-700.jpeg",
         title: "Avar",
         price: 15900,
         stock:2,
@@ -147,8 +147,6 @@ promesaProductos.then ((respuesta)=>{
 
 console.log ("Selected en ItemDetailContainer ", selected)
   return (
-    <div id="ID_cardContainer" className="cardContainer" flex >
     <ItemDetail  sel= {selected} />
-    </div> 
   )
 }
