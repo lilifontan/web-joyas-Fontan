@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
 
-function ItemCounter({st,init}) {
+function ItemCounter({st,init,goToCart, setGoToCart }) {
 
   let [numero, setNumero] = useState(0)
+
+
 
   function onAdd () {
     if (numero < st){
@@ -21,10 +23,16 @@ function ItemCounter({st,init}) {
     }
   }
 
+  function setearCarrito (){
+  setGoToCart(true)
+}
+
   return (
     <>
     <div style={{marginLeft: "10px"}} >
-        <button style={{marginLeft: "10px"}} disabled={numero===0} onClick={onRest}>-</button>
+
+        <button style={{marginLeft: "10px"}}  onClick={setearCarrito}>Ir al Carrito</button>
+        <button style={{marginLeft: "10px"}}  onClick={onRest}>-</button>
         {
           <span style={{marginLeft: "10px"}}>{numero}</span>
         }

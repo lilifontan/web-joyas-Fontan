@@ -91,12 +91,30 @@ ul li a:hover {
       margin-bottom: 1%;
       padding-top:3%;
       padding-bottom: 3%;
-      margin-top:40%;
+      margin-top:20%;
       border: none;
       border-radius: 10px;
       cursor: pointer;
       font-size: 18px;
      
+     }
+
+     .buttonGoToCart{
+
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 150px;
+ 
+      background-color: #e0dbdb;
+      color: #302d2d;
+      padding: 10%;
+      margin-top:40%;
+      margin-left: 15%;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
      }
 
     .buttonCart2{

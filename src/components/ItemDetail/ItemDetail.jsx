@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import ItemCounter from '../ItemList/ItemCounter';
 
 const ItemDetail = ({sel}) => {
  
-  console.log ("variable selected en itemDetail", {sel})
+  const [goToCart, setGoToCart] = useState (false)
 
   return (
     <>
@@ -15,10 +15,19 @@ const ItemDetail = ({sel}) => {
             <div>
                 <div className="cartTitleDetail"><h2>{sel.title}</h2></div>
                 <div className="cartPrice"><h2>${sel.price}</h2></div>
-                  <button data-id={sel.id} className="buttonDetail"> 
-                        <span>Agregar al carrito </span>
-                        <ItemCounter st={sel.stock} init={sel.initial} />
-                  </button>
+
+                  { goToCart
+                    ?<button data-id={sel.id} className="buttonGoToCart"> 
+                     <Link to={`/cart`} >Ir al carrito</Link>
+                     </button>
+                    :
+                     <button data-id={sel.id} className="buttonDetail"> 
+                     <span>Agregar producto </span>
+                     <ItemCounter st={sel.stock} init={sel.initial} goToCart ={goToCart} setGoToCart={setGoToCart}/>
+              </button>
+                       
+                  }
+
             </div>
         </div>     
      

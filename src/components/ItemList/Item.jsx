@@ -14,10 +14,7 @@ const Item = ({id, img, title, price, stock , initial}) => {
             <button className="buttonProd" >  
             <Link to={`/producto/${title}`} >Ir al detalle del producto</Link>
               </button>
-              <button data-id={id} className="buttonProd"> 
-                    <span>Agregar al carrito </span>
-                    <ItemCounter st={stock} init={initial} />
-              </button>
+             
         </div>     
      
     </>

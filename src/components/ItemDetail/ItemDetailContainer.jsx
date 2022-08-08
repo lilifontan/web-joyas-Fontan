@@ -144,7 +144,6 @@ promesaProductos.then ((respuesta)=>{
 })
 },[],[selected, setSelected, title]);
 
-console.log ("Selected en ItemDetailContainer ", selected)
   return (
     <ItemDetail  sel= {selected} />
   )
