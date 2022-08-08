@@ -141,14 +141,14 @@ const promesaProductos = new Promise ((res,rej) => {
 
 // El then: lo que ejecuto cuando la promesa se resuelve positivamente. Ponemos el valor de la respuesta en un estado, lo que causa un render.
 promesaProductos.then ((respuesta)=>{
-    setSelected(respuesta)
+    setSelected(respuesta[0])
 })
-},[selected, setSelected, title]);
+},[],[selected, setSelected, title]);
 
 console.log ("Selected en ItemDetailContainer ", selected)
   return (
     <div id="ID_cardContainer" className="cardContainer" flex >
-    <ItemDetail selected = {selected}/>
+    <ItemDetail  sel= {selected} />
     </div> 
   )
 }
