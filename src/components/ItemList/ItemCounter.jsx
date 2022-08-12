@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
-
+import {useCartContext} from '../../components/Cart/CartProvider'
 function ItemCounter({st,init,goToCart, setGoToCart }) {
 
   let [numero, setNumero] = useState(0)
-
+  
 
 
   function onAdd () {
