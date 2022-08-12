@@ -1,15 +1,15 @@
 import React, {useState} from 'react'
-import {useCartContext} from '../../components/Cart/CartProvider'
-function ItemCounter({st,init,goToCart, setGoToCart }) {
+
+function ItemCounter({selected,goToCart, setGoToCart }) {
 
   let [numero, setNumero] = useState(0)
-  
+
 
 
   function onAdd () {
-    if (numero < st){
+    if (numero < selected.stock){
      setNumero (numero+1)
-     st =st-1
+     selected.stock =selected.stock-1
     }
     else 
      Swal.fire('Producto sin stock')
@@ -17,9 +17,9 @@ function ItemCounter({st,init,goToCart, setGoToCart }) {
 
  function onRest ()
                 {
-    if (numero > init){
+    if (numero > selected.initial){
     setNumero (numero-1)
-    st =st+1
+    selected.initial =selected.initial+1
     }
   }
 
