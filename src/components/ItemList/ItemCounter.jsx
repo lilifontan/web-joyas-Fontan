@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 function ItemCounter({selected,goToCart, setGoToCart }) {
 
   let [numero, setNumero] = useState(0)
-
+  console.log ("selected en ItemCounter", {selected})
 
 
   function onAdd () {
@@ -19,7 +19,7 @@ function ItemCounter({selected,goToCart, setGoToCart }) {
                 {
     if (numero > selected.initial){
     setNumero (numero-1)
-    selected.initial =selected.initial+1
+    selected.stock =selected.stock+1
     }
   }
 

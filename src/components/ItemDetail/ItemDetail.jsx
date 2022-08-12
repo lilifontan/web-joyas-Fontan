@@ -23,7 +23,7 @@ const ItemDetail = ({sel}) => {
                     :
                      <button data-id={sel.id} className="buttonDetail"> 
                      
-                     <ItemCounter sel ={sel} goToCart ={goToCart} setGoToCart={setGoToCart}/>
+                     <ItemCounter selected ={sel} goToCart ={goToCart} setGoToCart={setGoToCart}/>
               </button>
                        
                   }
