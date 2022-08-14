@@ -1,15 +1,20 @@
 import React, {useState} from 'react'
+import {useCartContext} from '../../components/Cart/CartProvider'
+
 
 function ItemCounter({selected,goToCart, setGoToCart }) {
-
-  let [numero, setNumero] = useState(0)
   console.log ("selected en ItemCounter", {selected})
+ 
+  let [numero, setNumero] = useState(0)
+  const {addProduct} = useCartContext
 
+  console.log ('addProduct ', addProduct)
 
   function onAdd () {
     if (numero < selected.stock){
      setNumero (numero+1)
      selected.stock =selected.stock-1
+     addProduct(selected,numero)
     }
     else 
      Swal.fire('Producto sin stock')
