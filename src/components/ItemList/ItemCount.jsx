@@ -6,7 +6,7 @@ import {cartContext} from '../Context/CartContextComponent'
 function ItemCount({selected, goToCart, setGoToCart }) {
  
   let [numero, setNumero] = useState(0)
-  const {cart, addToCart} = useContext (cartContext)
+  const {cart, addItem} = useContext (cartContext)
 
   let st= selected.stock
   let init=selected.initial
@@ -32,14 +32,12 @@ function ItemCount({selected, goToCart, setGoToCart }) {
 
   function setearCarrito (){
   setGoToCart(true)
-  addToCart(selected, numero)
+  addItem(selected, numero)
 
  // setCart ([...cart, {...selected, count: numero}])
 }
 
-useEffect (()=>{
-  console.log (cart)
-}, [cart])
+
 
   return (
     <>

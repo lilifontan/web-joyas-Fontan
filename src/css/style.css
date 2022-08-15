@@ -144,3 +144,9 @@ ul li a:hover {
       justify-content: space-around;
      }
      
+     .total{
+      color:violet;
+      font-size: larger;
+      padding-left:45%;
+
+     }
