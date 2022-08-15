@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-import ItemCounter from '../ItemList/ItemCounter';
+import ItemCount from '../ItemList/ItemCount';
 
 const ItemDetail = ({sel}) => {
  
@@ -11,19 +11,19 @@ const ItemDetail = ({sel}) => {
 
         <div className = "cardDetail">
 
-            <div className="detailImage"> <img src={sel.img} /> </div>
+            <div className="detailImage"> <img src={sel.imgDetail} /> </div>
             <div>
                 <div className="cartTitleDetail"><h2>{sel.title}</h2></div>
                 <div className="cartPrice"><h2>${sel.price}</h2></div>
 
                   { goToCart
                     ?<button data-id={sel.id} className="buttonGoToCart"> 
-                     <Link to={`/cart`} >Ir al carrito</Link>
+                     <Link to={`/cart`} >Finalizar Compra</Link>
                      </button>
                     :
                      <button data-id={sel.id} className="buttonDetail"> 
                      
-                     <ItemCounter selected ={sel} goToCart ={goToCart} setGoToCart={setGoToCart}/>
+                     <ItemCount selected ={sel} goToCart ={goToCart} setGoToCart={setGoToCart}/>
               </button>
                        
                   }

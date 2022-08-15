@@ -9,7 +9,7 @@ const ItemList = ({lista}) => {
     <>
         {
                 lista.map((item,i)=>
-                  <Item id={item.id} img={item.img} title={item.title} price={item.price} stock ={item.stock }  initial={item.initial}/>
+                  <Item id ={item.id} img={item.img} title={item.title} price={item.price} stock ={item.stock }  initial={item.initial}/>
                 )
             }
      
@@ -18,6 +18,8 @@ const ItemList = ({lista}) => {
 }
 
 export default ItemList;
+
+
 
 
 

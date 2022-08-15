@@ -18,15 +18,16 @@ export default function CartProvider({children}) {
           newCart.push({ ...item, quantity: newQuantity })
           setCart(newCart)
         }
-
-   console.log ('carrito ', cart)
+   const lili = useCartContext(CartContext)
+   console.log ('CartContext ', lili)
    
   return (
     <CartContext.Provider value= {{
-      clearCart : clearCart,
-      isInCart : isInCart,
-      removeProduct : removeProduct,
-      addProduct: addProduct
+      clearCart,
+      isInCart,
+      addProduct,
+      removeProduct
+      
     }}>
 
       {children}
