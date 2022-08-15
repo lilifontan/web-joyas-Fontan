@@ -2,7 +2,7 @@ import React , {useContext, useEffect} from 'react'
 import { cartContext } from '../Context/CartContextComponent'
 
 export default function CartWidget() {
-const {cart, total} = useContext (cartContext)
+const {cart, totalCount} = useContext (cartContext)
 
 
 useEffect (()=>{
@@ -17,7 +17,7 @@ useEffect (()=>{
     width="50px"
   /> 
 
- <div class = 'total'> {total} </div>
+ <div className = 'total'> {totalCount} </div>
   
     </div>
   )
