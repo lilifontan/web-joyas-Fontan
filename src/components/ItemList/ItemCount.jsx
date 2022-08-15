@@ -6,7 +6,7 @@ import {cartContext} from '../Context/CartContextComponent'
 function ItemCount({selected, goToCart, setGoToCart }) {
  
   let [numero, setNumero] = useState(0)
-  const {cart, setCart} = useContext (cartContext)
+  const {cart, addToCart} = useContext (cartContext)
 
   let st= selected.stock
   let init=selected.initial
@@ -18,7 +18,7 @@ function ItemCount({selected, goToCart, setGoToCart }) {
    
     }
     else 
-     Swal.fire('Producto sin stock')
+     Swal.fire('Producto ha llegado al stock actual')
                 }
 
  function onRest ()
@@ -31,9 +31,10 @@ function ItemCount({selected, goToCart, setGoToCart }) {
  
 
   function setearCarrito (){
-  //setGoToCart(true)
-  alert (JSON.stringify(cart))
-  setCart ([...cart, {...selected, count: numero}])
+  setGoToCart(true)
+  addToCart(selected, numero)
+
+ // setCart ([...cart, {...selected, count: numero}])
 }
 
 useEffect (()=>{

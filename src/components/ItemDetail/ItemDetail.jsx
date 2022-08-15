@@ -17,9 +17,16 @@ const ItemDetail = ({sel}) => {
                 <div className="cartPrice"><h2>${sel.price}</h2></div>
 
                   { goToCart
-                    ?<button data-id={sel.id} className="buttonGoToCart"> 
+                    ? ( <>
+                    <button className="buttonGoToCart"> 
                      <Link to={`/cart`} >Finalizar Compra</Link>
                      </button>
+
+                     <button className="buttonGoToCart"> 
+                     <Link to={`/`} >Seguir comprando</Link>
+                     </button>
+                     
+                     </>)
                     :
                      <button data-id={sel.id} className="buttonDetail"> 
                      

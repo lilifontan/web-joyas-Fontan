@@ -6,10 +6,28 @@ export const cartContext = createContext()
 
 export default function CartContextComponent({children}) {
 
-const [cart, setCart] = useState ([{id:15, title: 'Lili', count: 10}])
+const [cart, setCart] = useState ([])
+
+function addToCart(item, count)
+{
+const cartAux = [...cart]
+let foundInCart = false
+
+for (let i=0; i<cartAux.length; i++){
+if (cartAux[i].id == item.id) {
+  cartAux[i].count =cartAux[i].count+count
+  foundInCart =true
+}
+}
+if (!foundInCart){
+  cartAux.push ({...item, count})
+}
+setCart(cartAux)
+console.log ('CART ES ', cart)
+}
 
   return (
-    <cartContext.Provider value = {{cart, setCart}}>   
+    <cartContext.Provider value = {{cart, addToCart}}>   
     {children}
     </cartContext.Provider>
   )
