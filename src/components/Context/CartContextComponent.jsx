@@ -10,6 +10,8 @@ const [cart, setCart] = useState ([])
 const [totalCount, setTotalCount] = useState (0)
 const [totalToPay, setTotalToPay] = useState (0)
 
+
+//Función para agregar elementos al carrito
 function addItem (item, count)
 {
     const cartAux = [...cart]
@@ -27,8 +29,19 @@ function addItem (item, count)
     setCart(cartAux)
 }
 
+//Función para remover elementos del carrito
 function removeItem (id) {
   setCart(cart.filter(item => item.id !== id))
+}
+
+//Función para vaciar el carrito
+function clearCart () {
+  setCart([])
+}
+
+//Función chequear si hay elementos en el carrito
+function isInCart (id) {
+  cart.find(item => item.id === id) ? true : false
 }
 
 useEffect (() =>{
@@ -38,7 +51,7 @@ setTotalToPay (cart.reduce((acc, item)=> acc + item.count*item.price,0))
 
 
   return (
-    <cartContext.Provider value = {{cart, addItem, totalCount, totalToPay, removeItem}}>   
+    <cartContext.Provider value = {{cart, addItem, totalCount, totalToPay, removeItem, clearCart, isInCart}}>   
     {children}
     </cartContext.Provider>
   )
