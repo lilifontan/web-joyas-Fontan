@@ -29,9 +29,8 @@ const ItemDetail = ({sel}) => {
                      </>)
                     :
                      <button data-id={sel.id} className="buttonDetail"> 
-                     
                      <ItemCount selected ={sel} goToCart ={goToCart} setGoToCart={setGoToCart}/>
-              </button>
+                    </button>
                        
                   }
 

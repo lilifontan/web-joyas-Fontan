@@ -27,6 +27,7 @@ function addItem (item, count)
       cartAux.push ({...item, count})
     }
     setCart(cartAux)
+
 }
 
 //Función para remover elementos del carrito
@@ -37,6 +38,7 @@ function removeItem (id) {
 //Función para vaciar el carrito
 function clearCart () {
   setCart([])
+
 }
 
 //Función chequear si hay elementos en el carrito
