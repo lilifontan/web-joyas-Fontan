@@ -10,7 +10,10 @@ const {cart, totalCount, totalToPay, removeItem} = useContext (cartContext)
     {
       cart.map((item)=>
       <>
-      <div> {'Producto: '+ item.title + '   Cantidad:  '+ item.count}   </div>
+      <div> 
+          {'Producto: '+ item.title + '   Cantidad:  '+ item.count}   {'  '}
+          <span onClick ={() => removeItem (item.id)}>  🗑️ </span>
+      </div>
       </>
       )  }
     
