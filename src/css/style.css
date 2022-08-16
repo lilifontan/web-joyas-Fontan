@@ -36,6 +36,16 @@ ul li a:hover {
       flex-flow: row wrap;
       width: 100%; }
 
+      .cardContainer2 {
+        background-color: #dad7de;
+        flex-direction: column;
+        padding:5%;
+        padding-bottom: 30%;
+        justify-content:center;
+        flex-flow: row wrap;
+        height: auto;
+      }
+
     .card {
       display: flex;
       flex-direction: column;

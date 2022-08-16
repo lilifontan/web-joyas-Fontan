@@ -8,22 +8,30 @@ const {cart, totalCount, totalToPay, removeItem} = useContext (cartContext)
 
   return (
     <>
+     <div  className="cardContainer2" flex >
+     <h1>Carrito de compras</h1>
+     <br></br>
     {
       cart.map((item)=>
       <>
-      <div > 
-        <br></br>
-          {'Producto: '+ item.title + '   Cantidad:  '+ item.count}   {'  '}
+      
+      <h2 > 
+ 
+        {'Producto: '+ item.title + '   Cantidad:  '+ item.count}   {'  '}
           <span onClick ={() => removeItem (item.id)}>  🗑️ </span>
-      </div>
+      </h2>
+   
+    
       </>
       )  }
+        <br></br>
     
-    <h3>Tienes en el carro :{totalCount} productos</h3>
+    <h3>Cantidad de productos : {totalCount} </h3>
     <h3>Tu total a pagar es  ${totalToPay}</h3>
     <br></br>
 
     <Link to = {'/checkout'}>  TERMINAR COMPRA  </Link>
+    </div>
     </>
   )
 }
