@@ -6,7 +6,7 @@ const {cart, totalCount} = useContext (cartContext)
 
 
 useEffect (()=>{
-    console.log ("CART LENGHT ", cart)
+    
   }, [cart])
 
   return (
