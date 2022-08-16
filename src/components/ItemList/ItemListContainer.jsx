@@ -35,7 +35,7 @@ export default function ItemListContainer() {
 
 
   return (
-    <div id="ID_cardContainer" className="cardContainer" flex >
+    <div id="ID_cardContainer" className="cardContainer" >
     <ItemList lista = {products}/>
     </div> 
   )

@@ -10,12 +10,12 @@ const [cartAux, setAux] = useState (true)
 
   useEffect (() => { 
   if (cart.length == 0) setAux (false)
-  console.log ('CART  ', cart, cartAux)
+
   }, [cart])
 
   return (
     <>
-    { cartAux ? (<div  className="cardContainer2" flex >
+    { cartAux ? (<div  className="cardContainer2"  >
      <h1>Carrito de compras</h1>
      <br></br> {
       cart.map((item)=>
@@ -34,7 +34,7 @@ const [cartAux, setAux] = useState (true)
     </div>
 			)
 					: (
-    <div  className="cardContainer2" flex >
+    <div  className="cardContainer2">
     <div>
     <br></br>
     <br></br>

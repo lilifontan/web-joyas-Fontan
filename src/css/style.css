@@ -46,6 +46,7 @@ ul li a:hover {
         height: auto;
       }
 
+
     .card {
       display: flex;
       flex-direction: column;
@@ -156,7 +157,12 @@ ul li a:hover {
      
      .total{
       color:violet;
-      font-size: larger;
+      font-size:medium;
       padding-left:45%;
 
      }
+
+ .checkout{
+  padding-left: 10%;
+  padding: 1%;
+ }
