@@ -77,7 +77,6 @@ ul li a:hover {
       flex-direction: row;
       width: 90%;
       margin-left:5%;
-      background-color: #e0dbdb;
       color: #302d2d;
       margin-bottom: 1%;
       padding-top:3%;
@@ -87,6 +86,7 @@ ul li a:hover {
       border-radius: 10px;
       cursor: pointer;
       font-size: 18px;
+      background-color: rgb(224, 211, 224);
      
      }
 
@@ -100,7 +100,6 @@ ul li a:hover {
       flex-direction: row;
       width: 100%;
       margin-left:5%;
-      background-color: #e0dbdb;
       color: #302d2d;
       margin-bottom: 1%;
       padding-top:3%;
@@ -110,6 +109,7 @@ ul li a:hover {
       border-radius: 10px;
       cursor: pointer;
       font-size: 18px;
+      background-color:  rgb(224, 211, 224);
      
      }
 
@@ -119,8 +119,6 @@ ul li a:hover {
       justify-content: center;
       flex-direction: row;
       width: 150px;
- 
-      background-color: #e0dbdb;
       color: #302d2d;
       padding: 10%;
       margin-top:40%;
@@ -129,11 +127,13 @@ ul li a:hover {
       border-radius: 10px;
       cursor: pointer;
       font-size: 18px;
+      background-color:  rgb(224, 211, 224);
      }
 
     .buttonCart2{
       display: flex;
       margin-left:30%;
+      background-color:  rgb(224, 211, 224);
 
      }
      .buttonFinish {
@@ -145,6 +145,7 @@ ul li a:hover {
       cursor: pointer;
       font-size: 14px;
       padding: 1%;
+      background-color:  rgb(224, 211, 224);
      }
 
      .cartPrice {
