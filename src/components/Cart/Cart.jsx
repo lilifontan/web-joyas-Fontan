@@ -18,8 +18,8 @@ const [cartAux, setAux] = useState (true)
     { cartAux ? (<div  className="cardContainer2"  >
      <h1>Carrito de compras</h1>
      <br></br> {
-      cart.map((item)=>
-      <>
+      cart.map((item)=> 
+      <> 
       <h2 > 
         {'Producto: '+ item.title + '   Cantidad:  '+ item.count}   {'  '}
           <span onClick ={() => removeItem (item.id)}>  🗑️ </span>
