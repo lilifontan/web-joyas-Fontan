@@ -27,8 +27,8 @@ clearCart()
   {
   
   orderId? 
-  
-  ('Gracias por confiar en nosotros. Tu id de compra es : '+  orderId) : (
+  < div  className="cardContainer2"  > <h2>
+  Gracias por confiar en nosotros. Tu número de orden es  {orderId} <br></br> <br></br> Recordá la orden , será requerida para recibir tu pedido</h2></div> : (
 
 
     <div  className="cardContainer2"  >
