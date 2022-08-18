@@ -3,7 +3,7 @@ import { cartContext } from '../Context/CartContextComponent'
 import {addDoc, collection, getFirestore} from 'firebase/firestore'
 
 export default function Checkout() {
-const {totalToPay, cart} = useContext (cartContext)
+const {totalToPay, cart, clearCart} = useContext (cartContext)
 const [name, setName ] = useState ('')
 const [email, setEmail ] = useState ('')
 const [tel, setTel ] = useState ('')
@@ -19,6 +19,7 @@ console.log ('order ', order)
 const db = getFirestore ()
 const orders = collection (db, 'orders')
 addDoc (orders, order).then (({id}) => { setOrderId(id)})
+clearCart()
 }
 
   return (
