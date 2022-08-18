@@ -12,14 +12,17 @@ function ItemCount({selected, goToCart, setGoToCart }) {
   let init=selected.initial
 
   function onAdd () {
-    if (numero < st){
+    if (numero < st ){
      setNumero (numero+1)
      st =st-1
-   
+     console.log ('numero 1', numero)
     }
-    else 
-     Swal.fire('Producto ha llegado al stock actual')
-                }
+  
+    else
+     {Swal.fire('Producto ha llegado al stock actual')
+     console.log ('numero 3', numero)}
+
+     console.log ('numero final', numero)           }
 
  function onRest ()
                 {
@@ -32,7 +35,11 @@ function ItemCount({selected, goToCart, setGoToCart }) {
 
   function setearCarrito (){
   setGoToCart(true)
+  if (numero != 0)
   addItem(selected, numero)
+  else 
+  Swal.fire('Agregue una cantidad de productos mayor a cero')
+  console.log ('numero en agregar ', numero)  
 
  // setCart ([...cart, {...selected, count: numero}])
 }

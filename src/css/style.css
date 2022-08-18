@@ -136,6 +136,16 @@ ul li a:hover {
       margin-left:30%;
 
      }
+     .buttonFinish {
+      display: flex;
+      background-color: #e0dbdb;
+      color: #302d2d;
+      margin-top: 5%;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      padding: 1%;
+     }
 
      .cartPrice {
       margin-left:35%;
@@ -163,6 +173,7 @@ ul li a:hover {
      }
 
  .checkout{
-  padding-left: 10%;
-  padding: 1%;
+  padding:0.1%;
+
+
  }
