@@ -19,12 +19,14 @@ const [cartAux, setAux] = useState (true)
      <h1>Carrito de compras</h1>
      <br></br> {
       cart.map((item)=> 
-      <> 
-      <h2 > 
-        {'Producto: '+ item.title + '   Cantidad:  '+ item.count}   {'  '}
+      <div key={item.id}> 
+      
+      <h2  > 
+        { 'Producto: '+ item.title + '   Cantidad:  '+ item.count}   {'  '}
           <span onClick ={() => removeItem (item.id)}>  🗑️ </span>
      </h2>
-      </>
+   
+      </div>
       )  }
     <br></br>
     <h3>Cantidad de productos : {totalCount} </h3>

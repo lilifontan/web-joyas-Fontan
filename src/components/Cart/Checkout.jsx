@@ -10,16 +10,23 @@ const [tel, setTel ] = useState ('')
 const [orderId, setOrderId ] = useState ('')
 
 function validateForm () {
+
+  if (name == "" || tel == "" || email == "") {
+    Swal.fire('Complete todos los datos requeridos') 
+  }
+  else {
+ 
 const order = {
   buyer: {name, tel, email},
   totalToPay,
   cart,
 }
-console.log ('order ', order)
+
 const db = getFirestore ()
 const orders = collection (db, 'orders')
 addDoc (orders, order).then (({id}) => { setOrderId(id)})
 clearCart()
+}
 }
 
   return (

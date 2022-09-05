@@ -1,5 +1,6 @@
 import {createContext, useState} from "react"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 import ItemListContainer from "./components/ItemList/ItemListContainer"
 import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -23,6 +24,7 @@ export default function  App  () {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<p>404</p>} />
       </Routes>
+      <Footer />
       </BrowserRouter>
       </CartContextComponent>
     </>
